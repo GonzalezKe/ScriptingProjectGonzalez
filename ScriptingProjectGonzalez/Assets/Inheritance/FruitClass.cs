@@ -21,7 +21,7 @@ public class FruitClass : MonoBehaviour
 
     public void Chop()
     {
-        Debug.Log("Theb " + color + " fruit has been chopped. ");
+        Debug.Log("The " + color + " fruit has been chopped. ");
     }
 
     public void SayHello()
