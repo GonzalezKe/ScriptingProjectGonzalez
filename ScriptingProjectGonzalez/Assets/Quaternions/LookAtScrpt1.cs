@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class LookAtScrpt1 : MonoBehaviour
 {
+
+    public Transform target;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +16,7 @@ public class LookAtScrpt1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Vector3 relativePos = target.position - transform.position;
+        transform.rotation = Quaternion.LookRotation(relativePos);
     }
 }
